@@ -23,7 +23,7 @@ namespace DelegateGeneric
             calculate<double, double> add = new calculate<double, double>(AddDouble);
             calculate<int, int> add1 = new calculate<int,int>(AddInt);
             Console.WriteLine(add1.Invoke(4,7));
-            Console.WriteLine(add.Invoke(100.7,78.3));
+            Console.WriteLine(add.Invoke(100.7,78.3)); //Anshuman
             Console.Read();
         }
     }
