@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Difference_Convert_parse", "Difference_Convert_parse\Difference_Convert_parse.csproj", "{2B622C91-2F74-4305-8097-D9A2A4B889DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B622C91-2F74-4305-8097-D9A2A4B889DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B622C91-2F74-4305-8097-D9A2A4B889DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B622C91-2F74-4305-8097-D9A2A4B889DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B622C91-2F74-4305-8097-D9A2A4B889DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A537B029-FD46-4922-91DB-7DFF7525DE87}
+	EndGlobalSection
+EndGlobal
