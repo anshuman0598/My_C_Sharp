@@ -14,6 +14,7 @@ namespace LinqDemo_EqualityOperator_
             IList<string> list2 = new List<string>() { "one", "two", "three", "four", "five" };
             bool isEqual = list1.SequenceEqual(list2);
             Console.WriteLine(isEqual);
+            //---My Name is Anshuman
         }
     }
 }
