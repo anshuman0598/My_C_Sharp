@@ -10,14 +10,22 @@ namespace LinqDemo_Genertation_Operator_
     {
         static void Main(string[] args)
         {
-            //---Empty Method
-            var emptyCollection1 = Enumerable.Empty<string>();
-            var emptyCollection2 = Enumerable.Empty<Student>();
-            Console.WriteLine("Type" + emptyCollection1.GetType().Name);
-            Console.WriteLine("Count" + emptyCollection2.Count());
+            ////---Empty Method
+            //var emptyCollection1 = Enumerable.Empty<string>();
+            //var emptyCollection2 = Enumerable.Empty<Student>();
+            //Console.WriteLine("Type" + emptyCollection1.GetType().Name);
+            //Console.WriteLine("Count" + emptyCollection2.Count());
 
-            //---Range Method
-            var intCollecttion = Enumerable.Range(10, 10);
+            ////---Range Method
+            //var intCollecttion = Enumerable.Range(10, 10);
+            //Console.WriteLine("Total count: " + intCollecttion.Count());
+
+            //for (int i = 0; i < intCollecttion.Count(); i++)
+            //{
+            //    Console.WriteLine("Value at index " + intCollecttion.ElementAt(i));
+            //}
+            ////---Repeat Method
+            var intCollecttion = Enumerable.Repeat(10, 10);
             Console.WriteLine("Total count: " + intCollecttion.Count());
 
             for (int i = 0; i < intCollecttion.Count(); i++)
