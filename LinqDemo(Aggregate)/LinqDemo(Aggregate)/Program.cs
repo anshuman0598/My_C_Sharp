@@ -10,20 +10,64 @@ namespace LinqDemo_Aggregate_
     {
         static void Main(string[] args)
         {
-            //IList<string> list = new List<string>() {"one","two","three","four","five" };
-            //var commaSeperatedString =list.Aggregate((s1,s2) => s1 +", "+ s2);
-            //Console.WriteLine(commaSeperatedString);
-            
+            //--Aggregate Method
+            /*IList<string> strList = new List<string>() { "One", "Two", "Three", "Four", "Five" };
+            var commaSeperatedString = strList.Aggregate((s1, s2) => s1 + "," + s2);
+            Console.WriteLine(commaSeperatedString);
+            */
 
-            // AVERAGE
-
-            IList<int> intList = new List<int>() { 10, 20, 30 };
+            //--Average Method
+            /*IList<int> intList = new List<int>() { 10, 20, 30, 40 };
             var avg = intList.Average();
-            Console.WriteLine(avg);
+            Console.WriteLine("Average is " + avg);*/
+            /*IList<Student> studentList = new List<Student>() {
+            new Student() { StudentID = 1, StudentName = "John", Age = 13 } ,
+            new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
+            new Student() { StudentID = 3, StudentName = "Bill",  Age = 18 } ,
+            new Student() { StudentID = 4, StudentName = "Ram" , Age = 20 } ,
+            new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 }
+            };
+            var avg = studentList.Average(s => s.Age);
+            Console.WriteLine("Average Age is: " + avg);*/
 
-            //Console.ReadLine();
+            //--Count Method
+            /*IList<int> intList = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            var totalElements = intList.Count();
+            Console.WriteLine("Total Elements: " + totalElements);
+            var evenElements = intList.Count(s => s % 2 == 0);
+            Console.WriteLine("Even Elements: " + evenElements);*/
+            //----------------
+            /*IList<Student> studentList = new List<Student>() {
+            new Student() { StudentID = 1, StudentName = "John", Age = 13 } ,
+            new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
+            new Student() { StudentID = 3, StudentName = "Bill",  Age = 18 } ,
+            new Student() { StudentID = 4, StudentName = "Ram" , Age = 20 } ,
+            new Student() { StudentID = 5, StudentName = "Ron" , Age = 15 }
+            };
+            var totalStudent = studentList.Count();
+            Console.WriteLine("Total Stidents: " + totalStudent);
+            var ageCondition = studentList.Count(s => s.Age > 18);
+            Console.WriteLine("No of Students whose age is greater than 18: " + ageCondition);
+            var totalAge = (from s in studentList select s.Age).Count();
+            Console.WriteLine(totalAge);*/
+
+            //--------Max Method
+            IList<int> intList = new List<int>() { 9, 2, 10, 5, 4, 12, 8 };
+            var maxElement = intList.Max();
+            var maxEven = intList.Max(i =>
+                                        {
+                                            if (i % 2 == 0)
+                                               return i;
+                                            else
+                                                return 0;
+                                        });          
+
+                    
+            Console.WriteLine("The max Element is: " + maxElement);
+            Console.WriteLine("Even max Element is: " + maxEven);
 
             Console.Read();
         }
-    }
-}
+        }
+  }
+
