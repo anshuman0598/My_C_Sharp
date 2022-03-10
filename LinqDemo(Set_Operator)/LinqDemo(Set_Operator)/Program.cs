@@ -34,29 +34,35 @@ namespace LinqDemo_Set_Operator_
             IList<string> list = new List<string>() { "One", "Two", "Three", "Four", "Five", "Six", "Seven" };
             IList<string> list2 = new List<string>() { "One", "Two", "Three", "Eight", "Nine", "Ten" };
 
-            var result1= list.Except(list2);
-            var result2 = list2.Except(list);
+            //var result1= list.Except(list2);
+            //var result2 = list2.Except(list);
 
-            Console.WriteLine("list.Except(list2) :");
-            foreach (var item in result1)
-                Console.WriteLine(item);
+            //Console.WriteLine("list.Except(list2) :");
+            //foreach (var item in result1)
+            //    Console.WriteLine(item);
 
-            Console.WriteLine("\nlist2.Except(list) :");
-            foreach (var item in result2)
-                Console.WriteLine(item);
-            //-- Intersect Method
+            //Console.WriteLine("\nlist2.Except(list) :");
+            //foreach (var item in result2)
+            //    Console.WriteLine(item);
+            ////-- Intersect Method
 
-            var result3 = list.Intersect(list2);
+            //var result3 = list.Intersect(list2);
 
-            Console.WriteLine("list.Intersect(list2) :");
-            foreach (var item in result3)
-                Console.WriteLine(item);
+            //Console.WriteLine("list.Intersect(list2) :");
+            //foreach (var item in result3)
+            //    Console.WriteLine(item);
 
-            //-- UNION METHOD
+            ////-- UNION METHOD
 
-            var result5 = list.Union(list2);
-            Console.WriteLine("list.Union(list2) :");
-            foreach (var item in result5)
+            //var result5 = list.Union(list2);
+            //Console.WriteLine("list.Union(list2) :");
+            //foreach (var item in result5)
+            //    Console.WriteLine(item);
+
+            //-- Skip
+
+            var result6 = list.Skip(2);
+            foreach (var item in result6)
                 Console.WriteLine(item);
         }
     }
