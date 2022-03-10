@@ -64,6 +64,21 @@ namespace LinqDemo_Set_Operator_
             var result6 = list.Skip(2);
             foreach (var item in result6)
                 Console.WriteLine(item);
+            Console.WriteLine();
+            var result7 = list.SkipWhile(s => s.Length > 4); //--Partetioning Operator
+            foreach (var item in result7)
+                Console.WriteLine(item);
+            Console.WriteLine();
+            //-- Take
+            var result8 = list.Take(2);
+            foreach (var item in result8)
+                Console.WriteLine(item);
+            Console.WriteLine();
+            var result9 = list.TakeWhile(s => s.Length < 4);
+            foreach (var item in result9)
+                Console.WriteLine(item);
+            Console.WriteLine();
+
         }
     }
     public class Student
