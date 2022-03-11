@@ -25,7 +25,7 @@ namespace LinqDemo_Conversion_Operator_
             Console.WriteLine("strArray Length: "+strArray.Length);
             Console.WriteLine("strArray Type: "+strArray.GetType().Name);
 
-            IList<string> list2 = strArray.ToList<string>(); // Convert Array to List
+            IList<string> list2 = strArray.ToList<string>(); // Convert Array to List syntax
             Console.WriteLine("List2 Type " + list2.GetType().Name); 
 
 
