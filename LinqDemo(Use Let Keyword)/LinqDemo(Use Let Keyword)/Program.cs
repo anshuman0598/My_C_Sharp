@@ -25,6 +25,13 @@ namespace LinqDemo_Use_Let_Keyword_
                                          select lower;
             foreach (var s in lowerCaseStudentsNames)
                 Console.WriteLine("Student Name: " + s);
+            //// Without using Let we have to use ToLower 2 times
+            //var lowercaseStudentName = from s in studentList
+            //                            where s.StudentName.ToLower().StartsWith("r")
+            //                            select s.StudentName.ToLower();
+            //foreach (var s in lowercaseStudentName)
+            //    Console.WriteLine("Student Name: " + s);
+
             Console.Read();
         }
 
